@@ -6,6 +6,9 @@ import { Exmpl1Component } from './exmpl1/exmpl1.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { OneWayBindingComponent } from './one-way-binding/one-way-binding.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
+import { AppCalculatorComponent } from './app-calculator/app-calculator.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +16,12 @@ import { OneWayBindingComponent } from './one-way-binding/one-way-binding.compon
     Exmpl1Component,
     NavigationBarComponent,
     ProductListComponent,
-    OneWayBindingComponent
+    OneWayBindingComponent,
+    ContactFormComponent,
+    AppCalculatorComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
