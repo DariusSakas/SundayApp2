@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product name</th>
+      <th scope="col">Padaziukas name</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products; let idx = index">
+      <th scope="row">{{ idx + 1 }}</th>
+      <td>{{ product.productName }}</td>
+      <td>{{ product.productPadaziukas }}</td>
+      <td>{{ product.city }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CityProviderService } from './services/city-provider.service';
 //@angular/core is decorator for component
 @Component({
   selector: 'app-root',
@@ -8,4 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'SundayApp2';
   bestFoodEver: string = 'Kebab';
+  description: string = 'lorem1 ipsum';
+
+  cityService = new CityProviderService();
+  cities: string[] = this.cityService.provideCities();
 }
